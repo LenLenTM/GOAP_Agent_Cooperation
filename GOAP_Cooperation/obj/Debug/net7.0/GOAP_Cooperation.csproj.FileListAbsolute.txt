@@ -1,0 +1,15 @@
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\bin\Debug\net7.0\GOAP_Cooperation.exe
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\bin\Debug\net7.0\GOAP_Cooperation.deps.json
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\bin\Debug\net7.0\GOAP_Cooperation.runtimeconfig.json
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\bin\Debug\net7.0\GOAP_Cooperation.dll
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\bin\Debug\net7.0\GOAP_Cooperation.pdb
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.csproj.AssemblyReference.cache
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.AssemblyInfoInputs.cache
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.AssemblyInfo.cs
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.csproj.CoreCompileInputs.cache
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.dll
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\refint\GOAP_Cooperation.dll
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.pdb
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\GOAP_Cooperation.genruntimeconfig.cache
+C:\Users\lena_\RiderProjects\GOAP_Cooperation\GOAP_Cooperation\obj\Debug\net7.0\ref\GOAP_Cooperation.dll

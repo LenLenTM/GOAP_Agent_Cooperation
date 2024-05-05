@@ -4,8 +4,7 @@ public class Planner
 {
         private List<BaseAction> _plan; // stores the plan for execution and checking the last link in the plan if it still fulfills the current goal
 
-        private BaseGoal _currentGoal = null;
-        private bool changedGoal = false;
+        private BaseGoal _currentGoal;
         private List<BaseAction> availableActions;
         private GOAP_Entity _planOwner;
 
@@ -61,7 +60,6 @@ public class Planner
                         _currentGoal = highestPriority;
                         _currentGoal.Initialize();
                         _plan = new List<BaseAction>();
-                        changedGoal = true;
                 }
         }
 
@@ -99,10 +97,7 @@ public class Planner
         {
                 if (PlanIsComplete(plan))
                 {
-                        if (CalculateCost(plan) < CalculateCost(_plan) || CalculateCost(_plan) == 0)
-                        {
-                                _plan = plan;
-                        }
+                        _plan = plan;
                         return;
                 }
                 

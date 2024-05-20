@@ -1,8 +1,10 @@
-﻿namespace GOAP_Cooperation.GOAP.Goals;
+﻿using GOAP_Cooperation.Entity;
+
+namespace GOAP_Cooperation.GOAP.Goals;
 
 public class Idle : BaseGoal
 {
-    public Idle(GOAP_Entity goapEntity) : base(goapEntity)
+    public Idle(GoapEntity goapEntity) : base(goapEntity)
     {
         name = "Idle";
         GoalType = new(){ActionType.Idle};

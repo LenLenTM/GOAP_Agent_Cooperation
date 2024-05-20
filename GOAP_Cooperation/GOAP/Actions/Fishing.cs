@@ -1,6 +1,8 @@
-﻿public class Fishing : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class Fishing : BaseAction
 {
-    public Fishing(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public Fishing(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.FishingRod};
         ResultType = ActionType.Ingredients;

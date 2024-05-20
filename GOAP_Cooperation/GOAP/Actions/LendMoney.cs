@@ -1,6 +1,8 @@
-﻿public class LendMoney : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class LendMoney : BaseAction
 {
-    public LendMoney(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public LendMoney(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.None};
         ResultType = ActionType.Money;

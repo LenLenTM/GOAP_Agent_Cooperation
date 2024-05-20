@@ -1,6 +1,8 @@
-﻿public class CookWithFriend : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class CookWithFriend : BaseAction
 {
-    public CookWithFriend(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public CookWithFriend(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.Ingredients};
         ResultType = ActionType.Recipe;

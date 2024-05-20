@@ -1,4 +1,5 @@
 ﻿using System;
+using GOAP_Cooperation.Entity;
 
 public interface IBaseAction
 {
@@ -9,12 +10,12 @@ public class BaseAction : IBaseAction
 {
         public ActionType ResultType = ActionType.None;
         public List<ActionType> PreconditionType = new(){ActionType.None};
-        public GOAP_Entity Entity;
+        public GoapEntity Entity;
         public string Name = "BaseAction";
         public int Cost = 0;
         public string Owner;
 
-        public BaseAction(GOAP_Entity goapEntity, int cost)
+        public BaseAction(GoapEntity goapEntity, int cost)
         {
                 Entity = goapEntity;
                 Cost = cost;

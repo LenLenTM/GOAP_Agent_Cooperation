@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using GOAP_Cooperation.Entity;
 
 public class Planner
 {
@@ -6,9 +7,9 @@ public class Planner
 
         private BaseGoal _currentGoal;
         private List<BaseAction> availableActions;
-        private GOAP_Entity _planOwner;
+        private GoapEntity _planOwner;
 
-        public Planner(GOAP_Entity entity)
+        public Planner(GoapEntity entity)
         {
                 _planOwner = entity;
         }
@@ -74,9 +75,10 @@ public class Planner
         private void Plan()
         {
                 var allActions = availableActions;
-                // here we could check which entities are nearby and/or are cooperative
+                
                 foreach (var entity in World.Entities)
                 {
+                        // here we check which entities are nearby and/or are cooperative
                         if (entity.Name.Equals(_planOwner.Name) || !entity.IsCooperative) continue;
                         if (Vector2.Distance(_planOwner.Position, entity.Position) > 10) continue;
                         
@@ -155,20 +157,6 @@ public class Planner
 
                 return preconditions.All(actionType => preconditions.Count(action => action == actionType) == results.Count(action => action == actionType));
         }
-
-        /*private void ExecutePlan()
-        {
-                if (changedGoal)
-                {
-                        Logger.WriteLog("Action: " + _plan.Last().Name + " | Goal: " + _currentGoal.name + " [priority: " + _currentGoal.priority + "]");
-                        changedGoal = false;
-                }
-                
-                if (_plan.Last().Action())
-                {
-                        _plan.RemoveAt(_plan.Count -1);
-                }
-        }*/
 
         private void PrintPlan()
         {

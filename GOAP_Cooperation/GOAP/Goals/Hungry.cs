@@ -1,10 +1,11 @@
 ﻿using System;
+using GOAP_Cooperation.Entity;
 
 public class Hungry : BaseGoal
 {
     private double goal = 0;
 
-    public Hungry(GOAP_Entity goapEntity) : base(goapEntity)
+    public Hungry(GoapEntity goapEntity) : base(goapEntity)
     {
         name = "Hungry";
         GoalType = new(){ActionType.Eat};

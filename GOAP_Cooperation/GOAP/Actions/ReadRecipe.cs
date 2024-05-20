@@ -1,8 +1,10 @@
-﻿namespace GOAP_Cooperation.GOAP.Actions;
+﻿using GOAP_Cooperation.Entity;
+
+namespace GOAP_Cooperation.GOAP.Actions;
 
 public class ReadRecipe : BaseAction
 {
-    public ReadRecipe(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public ReadRecipe(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.Food};
         ResultType = ActionType.None;

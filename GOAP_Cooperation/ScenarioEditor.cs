@@ -1,4 +1,6 @@
 ﻿using System.Numerics;
+using GOAP_Cooperation.Entity;
+using GOAP_Cooperation.Entity.Items;
 using GOAP_Cooperation.GOAP.Actions;
 using GOAP_Cooperation.GOAP.Goals;
 
@@ -6,10 +8,10 @@ namespace GOAP_Cooperation;
 
 public static class ScenarioEditor
 {
-    public static GOAP_Entity mainChar;
-    public static GOAP_Entity cook;
-    public static GOAP_Entity friend;
-    public static GOAP_Entity bankAgent;
+    public static GoapEntity mainChar;
+    public static GoapEntity cook;
+    public static GoapEntity friend;
+    public static GoapEntity bankAgent;
     
     private static List<BaseAction> mainCharActions;
     private static List<BaseAction> cookActions;
@@ -18,10 +20,10 @@ public static class ScenarioEditor
 
     public static void Scenario1()
     {
-        mainChar = new GOAP_Entity("main", new List<BaseItem>(){new CookBook("Fooding")}, false, new Vector2(0, 0), true);
-        cook = new GOAP_Entity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
-        friend = new GOAP_Entity("friend", new List<BaseItem>() { new FishingRod("Fishing Rod") }, false, new Vector2(-2, 5), true);
-        bankAgent = new GOAP_Entity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
+        mainChar = new GoapEntity("main", new List<BaseItem>(){new CookBook("Fooding")}, false, new Vector2(0, 0), true);
+        cook = new GoapEntity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
+        friend = new GoapEntity("friend", new List<BaseItem>() { new FishingRod("Fishing Rod") }, false, new Vector2(-2, 5), true);
+        bankAgent = new GoapEntity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
         
         mainCharActions = new()
         {
@@ -63,10 +65,10 @@ public static class ScenarioEditor
     
     public static void Scenario2()
     {
-        mainChar = new GOAP_Entity("main", new List<BaseItem>(){new CookBook("Fooding"), new DishWasher("Dishwasher") }, false, new Vector2(0, 0), true);
-        cook = new GOAP_Entity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
-        friend = new GOAP_Entity("friend", new List<BaseItem>() { }, false, new Vector2(-2, 5), true);
-        bankAgent = new GOAP_Entity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
+        mainChar = new GoapEntity("main", new List<BaseItem>(){new CookBook("Fooding"), new DishWasher("Dishwasher") }, false, new Vector2(0, 0), true);
+        cook = new GoapEntity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
+        friend = new GoapEntity("friend", new List<BaseItem>() { }, false, new Vector2(-2, 5), true);
+        bankAgent = new GoapEntity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
         
         mainCharActions = new()
         {
@@ -108,10 +110,10 @@ public static class ScenarioEditor
     
     public static void Scenario3()
     {
-        mainChar = new GOAP_Entity("main", new List<BaseItem>(){new CookBook("Fooding"), new DishWasher("Dishwasher") }, false, new Vector2(0, 0), true);
-        cook = new GOAP_Entity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
-        friend = new GOAP_Entity("friend", new List<BaseItem>() { }, false, new Vector2(-2, 5), true);
-        bankAgent = new GOAP_Entity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
+        mainChar = new GoapEntity("main", new List<BaseItem>(){new CookBook("Fooding"), new DishWasher("Dishwasher") }, false, new Vector2(0, 0), true);
+        cook = new GoapEntity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
+        friend = new GoapEntity("friend", new List<BaseItem>() { }, false, new Vector2(-2, 5), true);
+        bankAgent = new GoapEntity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
         
         mainCharActions = new()
         {
@@ -153,10 +155,10 @@ public static class ScenarioEditor
     
     public static void Scenario4()
     {
-        mainChar = new GOAP_Entity("main", new List<BaseItem>(){new CookBook("Fooding"), new DishWasher("Dishwasher"), new LeftOvers("Pizza") }, false, new Vector2(0, 0), true);
-        cook = new GOAP_Entity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
-        friend = new GOAP_Entity("friend", new List<BaseItem>() { }, false, new Vector2(-2, 5), true);
-        bankAgent = new GOAP_Entity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
+        mainChar = new GoapEntity("main", new List<BaseItem>(){new CookBook("Fooding"), new DishWasher("Dishwasher"), new LeftOvers("Pizza") }, false, new Vector2(0, 0), true);
+        cook = new GoapEntity("cook", new List<BaseItem>() { new CookBook("Cooking Like A Chef") }, false, new Vector2(2, 2), true);
+        friend = new GoapEntity("friend", new List<BaseItem>() { }, false, new Vector2(-2, 5), true);
+        bankAgent = new GoapEntity("bank agent", new List<BaseItem>() { }, false, new Vector2(7, 1), true);
         
         mainCharActions = new()
         {

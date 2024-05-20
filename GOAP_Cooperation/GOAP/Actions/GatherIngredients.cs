@@ -1,6 +1,8 @@
-﻿public class GatherIngredients : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class GatherIngredients : BaseAction
 {
-    public GatherIngredients(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public GatherIngredients(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.None};
         ResultType = ActionType.Ingredients;

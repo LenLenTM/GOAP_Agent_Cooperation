@@ -1,6 +1,8 @@
-﻿public class Foraging : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class Foraging : BaseAction
 {
-    public Foraging(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public Foraging(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.ForagingKnowledge};
         ResultType = ActionType.Ingredients;

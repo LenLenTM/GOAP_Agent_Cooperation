@@ -1,18 +1,21 @@
 ﻿using System.Numerics;
+using GOAP_Cooperation.Entity.Items;
 
-public class GOAP_Entity
+namespace GOAP_Cooperation.Entity;
+
+public class GoapEntity
 {
     public string Name;
     private List<BaseItem> _inventory;
     public bool LivesOnFarm;
 
-    private List<BaseAction> _actions;
-    private List<BaseGoal> _goals;
+    private List<BaseAction> _actions = new();
+    private List<BaseGoal> _goals = new();
     private Planner _planner;
     public Vector2 Position;
     public bool IsCooperative;
 
-    public GOAP_Entity(string name, List<BaseItem> inventory, bool livesOnFarm, Vector2 position, bool isCooperative)
+    public GoapEntity(string name, List<BaseItem> inventory, bool livesOnFarm, Vector2 position, bool isCooperative)
     {
         Name = name;
         _inventory = inventory;
@@ -34,9 +37,9 @@ public class GOAP_Entity
     }
     
     /*public void UpdateHunger(double value)
-    {
-        Hunger.Hungry += value;
-    }*/
+{
+    Hunger.Hungry += value;
+}*/
 
     public bool IsInInventory(Type type)
     {

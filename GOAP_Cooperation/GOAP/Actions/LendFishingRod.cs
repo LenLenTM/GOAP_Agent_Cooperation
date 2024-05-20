@@ -1,6 +1,8 @@
-﻿public class LendFishingRod : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class LendFishingRod : BaseAction
 {
-    public LendFishingRod(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public LendFishingRod(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.None};
         ResultType = ActionType.FishingRod;

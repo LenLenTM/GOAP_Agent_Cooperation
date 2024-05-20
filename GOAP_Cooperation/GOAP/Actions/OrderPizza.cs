@@ -1,6 +1,8 @@
-﻿public class OrderPizza : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class OrderPizza : BaseAction
 {
-    public OrderPizza(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public OrderPizza(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.Money};
         ResultType = ActionType.Food;

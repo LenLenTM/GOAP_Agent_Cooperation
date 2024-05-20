@@ -1,6 +1,8 @@
-﻿public class GetLeftOvers : BaseAction
+﻿using GOAP_Cooperation.Entity;
+
+public class GetLeftOvers : BaseAction
 {
-    public GetLeftOvers(GOAP_Entity goapEntity, int cost) : base(goapEntity, cost)
+    public GetLeftOvers(GoapEntity goapEntity, int cost) : base(goapEntity, cost)
     {
         PreconditionType = new List<ActionType>(){ActionType.None};
         ResultType = ActionType.Food;
